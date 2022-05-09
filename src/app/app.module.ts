@@ -11,15 +11,31 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { HomeComponent } from './components/core/home/home.component';
+import { AuthorComponent } from './components/core/author/author.component';
+import { AboutComponent } from './components/core/about/about.component';
+import { ArtiklComponent } from './components/artikl/artikl.component';
+import { DobavljacComponent } from './components/dobavljac/dobavljac.component';
+import { PorudzbinaComponent } from './components/porudzbina/porudzbina.component';
+import { StavkaPorudzbineComponent } from './components/stavka-porudzbine/stavka-porudzbine.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent, 
     VoziloComponent,
-    AutomobilComponent
+    AutomobilComponent,
+    HomeComponent,
+    AuthorComponent,
+    AboutComponent,
+    ArtiklComponent,
+    DobavljacComponent,
+    PorudzbinaComponent,
+    StavkaPorudzbineComponent
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
