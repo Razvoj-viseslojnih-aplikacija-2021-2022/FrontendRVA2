@@ -16,6 +16,7 @@ export class ArtiklService {
   }
 
   public addArtikl(artikl:Artikl): Observable<any> {
+    artikl.id = 1;
     return this.httpClient.post(`${ARTIKL_URL}`, artikl);
   }
 
