@@ -22,6 +22,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { MatTableModule } from '@angular/material/table';
 import { HttpClientModule } from '@angular/common/http';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { ArtiklDialogComponent } from './components/dialogs/artikl-dialog/artikl-dialog.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -34,7 +40,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     ArtiklComponent,
     DobavljacComponent,
     PorudzbinaComponent,
-    StavkaPorudzbineComponent
+    StavkaPorudzbineComponent,
+    ArtiklDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +55,12 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatExpansionModule,
     MatTableModule,
     HttpClientModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatSnackBarModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    FormsModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
